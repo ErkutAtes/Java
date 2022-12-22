@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args)
+    {
+        //Değişken tanımı
+        final double pi = 3.14;
+        int yariCap,merkezAcisi;
+        double alan;
+
+
+
+        //Scanner
+        Scanner inp = new Scanner(System.in);
+
+        //kullanıcıdan bilgilerin alınması
+        System.out.print("Yarçapı tamsayı olarak gir :");
+        yariCap = inp.nextInt();
+
+        System.out.print("Merkez Açısı tamsayı olarak gir :");
+        merkezAcisi = inp.nextInt();
+
+        //hesaplamalar cevere alan
+
+        alan = (pi * yariCap * yariCap * merkezAcisi) / 360;
+        System.out.println("Alan :" + alan);
+
+
+    }
+}

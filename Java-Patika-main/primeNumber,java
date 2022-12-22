@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args)
+    {
+        /*Java dilinde "Recursive" metot kullanarak, kullanıcıdan alınan sayının "Asal" sayı olup olmadığını bulan programı yazın.*/
+
+        Scanner inp = new Scanner(System.in);
+
+        System.out.println("Sayı değeri giriniz :");
+        int number1 = inp.nextInt();
+        System.out.println(isPrime(number1,number1 /2));
+
+
+
+    }
+    static Boolean isPrime(int number,int number2){
+
+        if(number2 == 1)
+            return true;
+        else if(number % number2 == 0 )
+            return false;
+        else
+            return isPrime(number,number2-1);
+    }
+
+
+}

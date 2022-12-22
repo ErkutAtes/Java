@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args)
+    {
+        //Değişken tanımı
+        double boy,kilo,endeks;
+
+        //Scanner
+        Scanner inp = new Scanner(System.in);
+
+        //kullanıcıdan bilgilerin alınması
+        System.out.print("Kilo :");
+        kilo = inp.nextDouble();
+
+        System.out.print("Lütfen boyunuzu (metre cinsinde) giriniz:");
+        boy = inp.nextDouble();
+
+        endeks = kilo / (boy * boy);
+        System.out.println("endeks :" + endeks);
+
+    }
+}

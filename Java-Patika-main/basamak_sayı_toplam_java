@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        int n, r, total = 1, sum = 0, reminder;
+        int i = 10;
+        Scanner inp = new Scanner(System.in);
+
+        /*
+           Bir sayının basamak sayılarının toplamını hesaplayan program yazınız.
+         */
+
+        System.out.printf(" Sayı :");
+        n = inp.nextInt();
+
+        while(n != 0)
+        {
+
+            reminder = n % i;
+            n = n- reminder;
+            n = n / 10;
+            sum = sum + reminder;
+        }
+        System.out.printf("sonuc :%d",sum);
+    }
+}

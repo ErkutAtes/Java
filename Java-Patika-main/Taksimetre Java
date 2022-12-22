@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        //değişken tanıma
+        double tutar=0 ;
+        int yolMesafe;
+        //const değişkenler  değişmeyen değerler
+        final int acilis = 10;
+        final int MIN = 20;
+
+        //Scanner
+        Scanner inp = new Scanner(System.in);
+
+        //Bilgilerin alınması
+        System.out.print("Km olarak gidilen yolu girin (Küsürat olmadan tam sayı olarak yazın) :");
+        yolMesafe = inp.nextInt();
+
+        tutar = acilis + (yolMesafe * 2.20);
+
+        System.out.println(tutar <= 20 ? "Taksimetre Ücret :" + 20 : tutar);
+
+
+
+
+
+
+
+    }
+}

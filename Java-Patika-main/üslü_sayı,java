@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        int n, r,total = 1;
+
+        Scanner inp = new Scanner(System.in);
+
+        /*
+            Java ile kullanıcının girdiği değerler ile üslü sayı hesaplayan programı "For Döngüsü" kullanarak yapınız.
+         */
+
+        System.out.printf("Üssü alınacak Sayı :");
+        n = inp.nextInt();
+        System.out.printf("Üs :");
+        r = inp.nextInt();
+
+
+
+        for(int i = 1; i<= r; i++)
+        {
+         total = total * n;
+        }
+
+        System.out.printf("sonuc :%d",total);
+
+    }
+}

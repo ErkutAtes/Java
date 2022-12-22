@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args)
+    {
+
+        double tutar,toplam1,toplam2;
+
+        //Scanner
+        Scanner inp = new Scanner(System.in);
+
+        //fiyat bilgisi kullanıcıdan alınması
+        System.out.print("Fiyat nedir :");
+        tutar = inp.nextDouble();
+
+        //iki seçenekte hesaplandı
+        toplam1 = tutar + (tutar*0.18);
+        toplam2 = tutar+(tutar*0.08);
+
+        System.out.println("Kdv olmadan fiyat : " + tutar);
+
+        //ternary
+        System.out.println((tutar > 0 && tutar <= 1000) ? "Kdv fiyat :" +  tutar * 0.18 : "Kdv Fiyat :" + tutar * 0.08);
+        System.out.println((tutar > 0 && tutar <= 1000) ? "Toplam fiyat :" +  toplam1 : "Toplam Fiyat :" +  toplam2);
+
+    }
+}
